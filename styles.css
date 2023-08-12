@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: none;
+}
+
+body {
+  font-family: Montserrat;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.img-container {
+  height: 27rem;
+  width: 18rem;
+  flex: 1;
+}
+
+.main-img {
+  width: 18rem;
+  object-fit: contain;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.product-info {
+  flex: 1;
+  height: 27rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+.product-type {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.3rem;
+}
+
+.product-name {
+  font-family: fraunces;
+  font-size: 2.2rem;
+  line-height: 2rem;
+}
+
+.product-description {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.4rem;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.new-price {
+  font-family: fraunces;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+.add-btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  padding: 1rem 0.8rem 0.8rem 1.2rem;
+  font-weight: bold;
+  align-self: cenetr;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.add-btn:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+.add-btn-content {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 1rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media  screen and (max-width: 650px) {
+  section {
+    flex-direction: column;
+  }
+
+  .img-container {
+    width: 20rem;
+  }
+
+  .main-img {
+    content: url(images/image-product-mobile.jpg);
+    border-radius: 1rem 1rem 0 0;
+    width: 20rem;
+  }
+
+  .product-info {
+    gap: 0.8rem;
+    padding: 1rem;
+    align-self: center;
+  }
+
+  .product-name {
+    font-size: 1.6rem;
+  }
+}
