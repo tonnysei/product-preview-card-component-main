@@ -1,3 +1,16 @@
+:root {
+  /* Primary */
+
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +20,7 @@
 
 body {
   font-family: Montserrat;
-  background-color: hsl(30, 38%, 92%);
+  background-color: var(--Cream);
   font-size: 14px;
 }
 
@@ -20,7 +33,7 @@ body {
 
 section {
   display: flex;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--White);
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -48,7 +61,7 @@ section {
 }
 
 .product-type {
-  color: hsl(228, 12%, 48%);
+  color: var(--Dark-grayish-blue);
   letter-spacing: 0.3rem;
 }
 
@@ -59,7 +72,7 @@ section {
 }
 
 .product-description {
-  color: hsl(228, 12%, 48%);
+  color: var(--Dark-grayish-blue);
   line-height: 1.4rem;
 }
 
@@ -78,12 +91,12 @@ section {
 
 .original-price {
   text-decoration: line-through;
-  color: hsl(228, 12%, 48%);
+  color: var(--Dark-grayish-blue);
 }
 
 .add-btn {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(158, 36%, 37%);
+  color: var(--White);
+  background-color: var(--Dark-cyan);
   border: none;
   padding: 1rem 0.8rem 0.8rem 1.2rem;
   font-weight: bold;
@@ -94,7 +107,7 @@ section {
 }
 
 .add-btn:hover {
-  background-color: hsl(212, 21%, 14%);
+  background-color: var(--Very-dark-blue);
 }
 
 .add-btn-content {
